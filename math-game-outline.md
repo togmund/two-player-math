@@ -107,20 +107,19 @@ Game
   - Manages Current_Player
   - I/O
     - Start game / Play again
+    - Set Name
+    - Ask Question
+      - process answer
 ```
 
 ```rb
 Player
   - Second Created
-  - I/O
-    - Set name
 ```
 
 ```rb
 Question
   - Created each round
-  - I/O
-    - Attempt Answer
 ```
 
 # Task 3: Peer and Mentor review
