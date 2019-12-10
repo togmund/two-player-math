@@ -5,7 +5,7 @@ class Question
     @num1 = num1
     @operator = operator
     @num2 = num2
-    @query = num1.to_s + operator + num2.to_s
+    @query = "#{num1} #{operator} #{num2}"
     @respondant = respondant
     @round = round
     case operator
@@ -22,16 +22,14 @@ class Question
       when '%'
         @answer = num1 % num2
       else
-        puts "whut"
+        puts "whutt"
       end
   end
 end
 
-question1 = Question.new(1, "add", 3, "Frank Rose", 1)
-question1.evaluate(question1.num1, question1.num2, question1.operator)
+question1 = Question.new(1, "+", 3, "Frank Rose", 1)
 question1.response = 4
-question3 = Question.new(4, "subtract", 3, "Boy Bear", 3)
-question3.evaluate(question3.num1, question3.num2, question3.operator)
+question3 = Question.new(4, "-", 3, "Boy Bear", 3)
 question3.response = 6
 
 puts "----- Round 1 -----"
