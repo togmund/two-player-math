@@ -8,6 +8,6 @@ class Player
 end
 
 # Tests
-frank = Player.new("Frank Rose")
-puts frank.name
-puts frank.lives
+# frank = Player.new("Frank Rose")
+# puts frank.name
+# puts frank.lives

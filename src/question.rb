@@ -29,19 +29,19 @@ class Question
 end
 
 # Tests
-question1 = Question.new(1, "+", 3, "Frank Rose", 1)
-question1.response = 4
-question3 = Question.new(4, "-", 3, "Boy Bear", 3)
-question3.response = 6
+# question1 = Question.new(1, "+", 3, "Frank Rose", 1)
+# question1.response = 4
+# question3 = Question.new(4, "-", 3, "Boy Bear", 3)
+# question3.response = 6
 
-puts "----- Round 1 -----"
-puts "question #{question1.query}"
-puts "answer key #{question1.answer}"
-puts "response #{question1.response}"
-puts "correct? #{question1.answer == question1.response}"
+# puts "----- Round 1 -----"
+# puts "question #{question1.query}"
+# puts "answer key #{question1.answer}"
+# puts "response #{question1.response}"
+# puts "correct? #{question1.answer == question1.response}"
 
-puts "----- Round 3 -----"
-puts "question #{question3.query}"
-puts "answer key #{question3.answer}"
-puts "response #{question3.response}"
-puts "correct? #{question3.answer == question3.response}"
+# puts "----- Round 3 -----"
+# puts "question #{question3.query}"
+# puts "answer key #{question3.answer}"
+# puts "response #{question3.response}"
+# puts "correct? #{question3.answer == question3.response}"
