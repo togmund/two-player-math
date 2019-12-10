@@ -1,3 +1,4 @@
+# Class Declaration
 class Question
   attr_accessor :num1, :operator, :num2, :query, :answer, :respondant, :response, :round
 
@@ -27,6 +28,7 @@ class Question
   end
 end
 
+# Tests
 question1 = Question.new(1, "+", 3, "Frank Rose", 1)
 question1.response = 4
 question3 = Question.new(4, "-", 3, "Boy Bear", 3)
