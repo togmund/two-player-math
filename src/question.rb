@@ -8,16 +8,23 @@ class Question
     @query = num1.to_s + operator + num2.to_s
     @respondant = respondant
     @round = round
+    case operator
+      when '+'
+        @answer = num1 + num2
+      when '-'
+        @answer = num1 - num2
+      when '*'
+        @answer = num1 * num2
+      when '/'
+        @answer = num1 / num2
+      when '**'
+        @answer = num1 ** num2
+      when '%'
+        @answer = num1 % num2
+      else
+        puts "whut"
+      end
   end
-
-  def evaluate(num1, num2, operator)
-    if (operator == "add")
-      @answer = num1 + num2
-      end
-    if (operator == "subtract")
-      @answer = num1 - num2
-      end
-    end
 end
 
 question1 = Question.new(1, "add", 3, "Frank Rose", 1)
