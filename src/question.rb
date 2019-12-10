@@ -25,6 +25,8 @@ class Question
       else
         puts "whutt"
       end
+    puts "Question for round #{round}"
+    puts "What is #{num1} #{operator} #{num2}?" 
   end
 end
 
