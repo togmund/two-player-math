@@ -1,20 +1,31 @@
 class Question
   attr_accessor :num1, :operator, :num2, :query, :answer, :respondant, :response, :round
+
   def initialize(num1, operator, num2, respondant, round)
     @num1 = num1
     @operator = operator
     @num2 = num2
     @query = num1.to_s + operator + num2.to_s
-    @answer = num1 + operator.to_i + num2
     @respondant = respondant
     @round = round
   end
+
+  def evaluate(num1, num2, operator)
+    if (operator == "add")
+      @answer = num1 + num2
+      end
+    if (operator == "subtract")
+      @answer = num1 - num2
+      end
+    end
 end
 
-question1 = Question.new(1, "+", 3, "Frank Rose", 1)
-question1.response = 3
-question3 = Question.new(4, "-", 3, "Frank Rose", 3)
-question3.response = 1
+question1 = Question.new(1, "add", 3, "Frank Rose", 1)
+question1.evaluate(question1.num1, question1.num2, question1.operator)
+question1.response = 4
+question3 = Question.new(4, "subtract", 3, "Boy Bear", 3)
+question3.evaluate(question3.num1, question3.num2, question3.operator)
+question3.response = 6
 
 puts "----- Round 1 -----"
 puts "question #{question1.query}"
